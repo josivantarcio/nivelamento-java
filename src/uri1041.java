@@ -14,11 +14,12 @@ public class uri1041 {
 		if (x == 0.0 && y == 0.0) {
 			System.out.println("Origem");
 		}
-		else if (x == 0.0) {
-			System.out.println("Eixo Y");
-		}
-		else if (y == 0.0) {
-			System.out.println("Eixo X");
+		else if(x == 0 || y == 0) {
+			if(x == 0) {
+				System.out.println("Eixo X");
+			}else {
+				System.out.println("Eixo Y");
+			}
 		}
 		else if (x > 0.0 && y > 0.0) {
 			System.out.println("Q1");
