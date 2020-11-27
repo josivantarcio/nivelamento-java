@@ -8,24 +8,19 @@ public class uri1038 {
 
 		int codigo = sc.nextInt();
 		int quantidade = sc.nextInt();
-		
+		float preco = 0;
 		double total;
-		if (codigo == 1) {
-			total = quantidade * 4.0;
-		}
-		else if (codigo == 2) {
-			total = quantidade * 4.5;
-		}
-		else if (codigo == 3) {
-			total = quantidade * 5.0;
-		}
-		else if (codigo == 4) {
-			total = quantidade * 2.0;
-		}
-		else {
-			total = quantidade * 1.5;
-		}
-
+		if (codigo == 1) 
+			preco = 4.0f;
+		else if (codigo == 2)	
+			preco = 4.5f;
+		else if (codigo == 3)
+			preco = 5.0f;
+		else if (codigo == 4)	
+			preco = 2.0f;
+		else if(codigo == 5)
+			preco = 1.5f;
+		total = preco * quantidade;
 		System.out.printf("Total: R$ %.2f%n", total);
 		
 		sc.close();
